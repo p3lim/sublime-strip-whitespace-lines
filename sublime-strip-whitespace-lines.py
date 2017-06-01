@@ -3,8 +3,10 @@ import sublime_plugin
 
 class StripWhitespaceLines(sublime_plugin.TextCommand):
 	def run(self, edit):
-		for region in self.view.find_all('^[\t ]+$'):
+		region = self.view.find('^[\t ]+$', 0)
+		if(region):
 			self.view.erase(edit, region)
+			self.view.run_command('strip_whitespace_lines')
 
 class StripWhitespaceLinesEventListener(sublime_plugin.EventListener):
 	def on_pre_save(self, view):
