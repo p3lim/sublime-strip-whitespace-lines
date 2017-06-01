@@ -1,0 +1,9 @@
+The standard option `trim_trailing_white_space_on_save` works well, but I wanted only half of its functionality.  
+What it does is emptying lines only containing whitespace, as well as removing any trailing whitespace.
+
+What this plugin does is the former; emptying lines only containing whitespace.  
+You can enable this through the preferences (or syntax-specific) like so:
+
+{
+	"strip_whitespace_lines_on_save": true,
+}
