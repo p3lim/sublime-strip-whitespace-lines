@@ -1,9 +1,8 @@
 # [Strip Whitespace Lines](//packagecontrol.io/packages/Strip%20Whitespace%20Lines)
 
-The standard option `trim_trailing_white_space_on_save` works well, but I wanted only half of its functionality.  
-What it does is emptying lines only containing whitespace, as well as removing any trailing whitespace.
+This plugin is an alternative to the default option `trim_trailing_white_space_on_save` which removes any trailing whitespace when the user saves a file.  
+Instead of removing whitespace everywhere, this plugin only removes whitespace where the _whole line_ is entirely consistant of whitespace.
 
-What this plugin does is the former; emptying lines only containing whitespace.  
 You can enable this through the preferences (or syntax-specific) like so:
 ```json
 {
